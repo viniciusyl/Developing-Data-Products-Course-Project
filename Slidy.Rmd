@@ -1,0 +1,40 @@
+---
+title: "Analyses of famous mtcars dataset"
+author: "Vinicius Lago"
+date: "05/10/2020"
+output: ioslides_presentation
+
+---
+
+```{r setup, include=FALSE }
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+This document was created as a documentation of web app created in Developing Data Products Course Project.  
+
+This web app was created based in famous **mtcars R dataset** to accomplish the Course Project.  
+
+The goal of this panel is understand the relationship of some variables of the dataset, build with actual values for some types of cars.  
+
+## Mtcars dataset
+
+Let's visualize the summary of the variables of **mtcars** used in this app.  
+
+```{r, echo = TRUE, warning = FALSE, comment=""}
+
+summary(mtcars[, c("mpg", "cyl", "hp", "wt", "qsec")])
+
+```
+
+
+## Using the Panel
+
+The panel consists of a sidebar and a graph.  
+
+- Sidebar: in this place the user can choose the tow variables of interest. Click in **Submit button** to update the graph;  
+
+- Graph: the user can see all actual values for the different types of cars (points) and a regression line representing the trend of the chosen data. 
+
+## Thanks!!
